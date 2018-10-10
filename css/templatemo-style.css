@@ -109,6 +109,10 @@ a:focus {
 	height: 100%;
 }
 
+small {
+	margin-top: .6em;
+}
+
 .entry-form {
 	background: #252020;
 	border-radius: 100%;
