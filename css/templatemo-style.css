@@ -86,16 +86,6 @@ a:focus {
 	outline: none;
 }
 
-::-webkit-scrollbar {
-	width: 8px;
-	height: 8px;
-}
-
-::-webkit-scrollbar-thumb {
-	cursor: pointer;
-	background: #000000;
-}
-
 .section-title {
 	padding-bottom: 40px;
 }
@@ -251,7 +241,7 @@ section {
 	animation: spinner .9s linear infinite;
 }
 
-@-webkit-@keyframes spinner {
+@-webkit-keyframes spinner {
 	to {
 		transform: rotate(360deg);
 	}
