@@ -29,7 +29,7 @@
       loop:true,
       dots:false,
       autoplayHoverPause: false,
-      autoplay: false,
+      autoplay: true,
       smartSpeed: 1000,
     })
 
