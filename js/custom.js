@@ -21,21 +21,21 @@
 	});
 
 
-	// HOME SLIDER & projects & CLIENTS
+	// HOME SLIDER & projects 
 	$('.home-slider').owlCarousel({
 		animateOut: 'fadeOut',
 		items: 1,
-		loop: true,
+		loop: false,
 		dots: false,
-		autoplayHoverPause: false,
-		autoplay: true,
+		autoplayHoverPause: true,
+		autoplay: false,
 		smartSpeed: 1000,
 	})
 
 	$('.owl-projects').owlCarousel({
 		animateOut: 'fadeOut',
 		loop: true,
-		autoplayHoverPause: false,
+		autoplayHoverPause: true,
 		autoplay: true,
 		smartSpeed: 1000,
 		dots: false,
@@ -58,7 +58,7 @@
 	$('.owl-client').owlCarousel({
 		animateOut: 'fadeOut',
 		loop: true,
-		autoplayHoverPause: false,
+		autoplayHoverPause: true,
 		autoplay: true,
 		smartSpeed: 1000,
 		responsiveClass: true,
