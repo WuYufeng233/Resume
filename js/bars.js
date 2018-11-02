@@ -40,7 +40,7 @@ function in_view(t) {
         o = n + a.height();
 
     // 进度条显示时才刷新，不显示时重新归零
-    if (r > o - 45 && r < o + 800) {
+    if (r > o - 45 && r < o + 900) {
         a.css("width", a.attr("value") / a.parent().data("bg_max") * 100 + "%");
     } else {
         a.css("width", "0%");
