@@ -388,7 +388,7 @@ section.navbar.custom-navbar.navbar-fixed-top {
 
 .w3ls-banner-left-info h4,
 .social-info h4 {
-	font-size: 1.2em;
+	font-size: 1.5em;
 	margin: 0;
 	font-family: 'Roboto Slab', serif;
 	color: #FFFFFF;
@@ -398,9 +398,9 @@ section.navbar.custom-navbar.navbar-fixed-top {
 }
 
 .w3ls-banner-left-info p {
-	font-size: .9em;
+	font-size: 1.1em;
 	margin: 1em 0 0 0;
-	color: #cecece;
+	color: #f1f1f1;
 }
 
 .w3ls-banner-left-info p a {
@@ -435,15 +435,15 @@ section.navbar.custom-navbar.navbar-fixed-top {
 
 .banner-right-info h2 {
 	color: #FFFFFF;
-	font-size: 1em;
+	font-size: 1.5em;
 	font-weight: 600;
 	margin: 0;
 	line-height: 1.5em;
 }
 
 .banner-right-info p {
-	color: #cecece;
-	font-size: .9em;
+	color: #f1f1f1;
+	font-size: 1em;
 	margin: 1em 0 0 0;
 	line-height: 1.8em;
 }
@@ -534,6 +534,7 @@ section.navbar.custom-navbar.navbar-fixed-top {
 
 .social-info h4 {
 	margin: .2em 0 0 0 !important;
+	font-size: 1.2em;
 }
 
 .agileinfo-social-grids {
@@ -631,17 +632,18 @@ section.wrap {
 
 .wthree-about-left h4 {
 	color: #2f2f2f;
-	font-size: 1em;
+	font-size: 1.2em;
 	font-weight: 600;
 	margin: 0;
 	line-height: 1.5em;
 }
 
 .wthree-about-left p {
-	color: #999999;
-	font-size: .9em;
+	color: #2f2f2f;
+	font-size: .98em;
 	margin: 1em 0 0 0;
 	line-height: 1.8em;
+	text-align: left;
 }
 
 .wthree-about-left p span {
@@ -722,6 +724,7 @@ p.b_label {
 
 .projects-detail h3 {
 	margin: 0 0 2px 0;
+	text-align: center;
 }
 
 .projects-info {
@@ -761,6 +764,63 @@ p.b_label {
 .projects-price.free span {
 	background: #3f51b5;
 }
+
+/* ----------------翻牌效果----------------- */
+.wrapper {
+	perspective: 800px;
+	height: 300px;
+}
+
+.card {
+	position: relative;
+	transition: all 1s;
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+}
+
+.wrapper:hover .card {
+	transform: rotateY(180deg);
+}
+
+.card-face {
+	position: absolute;
+}
+
+.card-front {
+	border-radius: 50px;
+}
+
+.card-back {
+	transform: rotateY(180deg);
+}
+
+.detail-wrapper {
+	/* position: absolute;
+	left: -345px; */
+	background-color: rgba(255, 255, 255, 0.3);
+	border: 2px solid #31adaf;
+	border-radius: 33px;
+}
+
+.project-1 {
+	background-color: #31b3a5;
+}
+
+.project-2 {
+	background-color: #30a976;
+}
+
+.project-3 {
+	background-color: #0376e9;
+}
+
+.detail-wrapper div {
+	margin: 5px 10px;
+}
+
+/* -------------------翻牌效果end-------------- */
+
+
 
 /*---------------------------------------
      NEWS              
@@ -807,6 +867,10 @@ p.b_label {
 #experience .item>p {
 	font-size: 16px;
 	line-height: 26px;
+}
+
+.item {
+	border-radius: 10px;
 }
 
 .tst-rating {
