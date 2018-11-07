@@ -1230,4 +1230,8 @@ p.b_label {
 	.social-info {
 		margin-right: 15px;
 	}
+
+	.card-back {
+		width: 90%;
+	}
 }
