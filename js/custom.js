@@ -121,6 +121,11 @@
 			}, 70);
 			$body.appendChild($elem);
 		};
+
+		var u_agent = navigator.userAgent;
+		if (u_agent.indexOf("Firefox") > -1) {
+			$(".card-front").css("z-index", "3");
+		}
 	};
 
 })(jQuery);
