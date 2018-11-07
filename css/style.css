@@ -1005,13 +1005,18 @@ p.b_label {
 /*---------------------------------------
      RESPONSIVE STYLES              
   -----------------------------------------*/
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 1200px) {
 	.custom-navbar .navbar-nav.navbar-nav-first {
 		margin-left: inherit;
 	}
 
 	.w3l-banner-grids {
 		margin: 2em 0 2em 0;
+	}
+
+	.card-back {
+		width: 100%;
+		font-size: .96em;
 	}
 }
 
@@ -1067,6 +1072,11 @@ p.b_label {
 
 	.w3l-banner-grids {
 		margin: 2em 0 2em 0;
+	}
+
+	.card-back {
+		width: 80%;
+		left: 10%;
 	}
 }
 
